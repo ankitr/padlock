@@ -1,4 +1,4 @@
-gae-boilerplate
-===============
+Padlock
+=======
 
-HTML 5 + Google App Engine = Awesomeness.
+A template for building dynamic frontends using Google App Engine, AJAX, and HTML5.
