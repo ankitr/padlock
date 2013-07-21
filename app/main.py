@@ -118,8 +118,8 @@ def handle_500(request, response, exception):
 
 #Handlers
 class MainHandler(webapp2.RequestHandler):
-    def get(self):
-    	template = jinja_environment.get_template('templates/index.html')
+	def get(self):
+		template = jinja_environment.get_template('templates/index.html')
 		self.response.headers['Content-Type'] = b'text/html'
 		self.response.out.write(template.render())
 
@@ -146,7 +146,7 @@ class APIHandler(webapp2.RequestHandler):
 				return
 			response = {
 			'attribute': example.attribute,
-			'another_one' example.another_one
+			'another_one': example.another_one
 			}
 			self.response.headers['Content-Type'] = b'application/json'
 			self.response.out.write(json.dumps(response), default=json_handler)
